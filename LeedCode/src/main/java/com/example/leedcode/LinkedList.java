@@ -30,7 +30,7 @@ public class LinkedList {
         return res.next;
     }
 
-    public ListNode deleteDuplicates(ListNode head) {
+    public ListNode deleteDuplicates83(ListNode head) {
         LinkedList curr = head;
         while (curr.next !=  null){
             if(curr.val == curr.next.val){
