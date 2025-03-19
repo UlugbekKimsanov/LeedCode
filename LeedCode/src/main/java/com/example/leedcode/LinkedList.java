@@ -30,6 +30,19 @@ public class LinkedList {
         return res.next;
     }
 
+    public ListNode deleteDuplicates(ListNode head) {
+        LinkedList curr = head;
+        while (curr.next !=  null){
+            if(curr.val == curr.next.val){
+                curr.next = curr.next.next;
+            }else {
+                curr = curr.next;
+            }
+        }
+        return head;
+
+    }
+
     public ListNode reverseList(ListNode head){
         ListNode hozirgi = head;
         ListNode oldingi = null;
