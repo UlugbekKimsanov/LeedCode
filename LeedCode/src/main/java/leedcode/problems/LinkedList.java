@@ -33,15 +33,38 @@ public class LinkedList {
         return res.next;
     }
 
-    public ListNode deleteDuplicates83(ListNode head) {
-        ListNode curr = head;
-        while (curr.next != null) {
-            if (curr.val == curr.next.val) {
-                curr.next = curr.next.next;
-            } else {
-                curr = curr.next;
-            }
+    public ListNode LeedCode2807(ListNode head) {
+
+        return head;
+    }
+
+    public Integer getEKUB(Integer a, Integer b) {
+
+        while (b != 0){
+            Integer temp = b;
+
+            b = a%b;
+            a = temp;
         }
+
+        return a;
+    }
+
+
+
+    public ListNode deleteDuplicates83(ListNode head) {
+
+        ListNode cur = head;
+
+        while (cur != null) {
+            if (cur.next != null && cur.val == cur.next.val) {
+                cur.next = cur.next.next;
+            }else {
+                cur = cur.next;
+            }
+
+        }
+
         return head;
 
     }
