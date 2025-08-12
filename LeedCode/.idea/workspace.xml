@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edd1f3ad-aa87-411a-8198-c35211060f56" name="Changes" comment="LeedCode2356 Solved">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/leedcode/problems/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leedcode/problems/LinkedList.java" afterDir="false" />
     </list>
