@@ -52,6 +52,8 @@ public class LinkedList {
 
     public ListNode removeElements203(ListNode head, int val) {
 
+        java.util.LinkedList<Integer> list = new java.util.LinkedList<>();
+
         ListNode dummy = new ListNode(0);
 
         dummy.next = head;
@@ -66,6 +68,25 @@ public class LinkedList {
             }
         }
         return dummy.next;
+    }
+
+    public boolean hasCycle141(ListNode head) {
+
+        ListNode fast = head;
+
+        while (fast != null && fast.next != null){
+
+            head = head.next;
+            fast = fast.next.next;
+
+            if(fast == head){
+                return true;
+            }
+
+        }
+
+        return false;
+
     }
 
 
