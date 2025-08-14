@@ -2,6 +2,7 @@ package leedcode.problems;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class LinkedList {
     public static void main(String[] args) {
@@ -87,6 +88,33 @@ public class LinkedList {
 
         return false;
 
+    }
+
+    public boolean isPalindrome234_1stSolution(ListNode head) {
+        List<Integer> numbers = new ArrayList<>();
+
+        while(head != null){
+            numbers.add(head.val);
+            head = head.next;
+        }
+        int half = numbers.size()/2;
+
+        if (numbers.size() % 2 == 0){
+            for (int i = 0; i < half; i++) {
+                if(!numbers.get(half - i - 1).equals(numbers.get(half + i))) {
+                    return false;
+                }
+            }
+        }else {
+            for (int i = 0; i <= half; i++) {
+                if (!numbers.get(half - i).equals(numbers.get(half + i))) {
+                    return false;
+                }
+            }
+        }
+
+
+        return true;
     }
 
 
